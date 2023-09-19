@@ -66,14 +66,15 @@
     <div class="contato">
       <h1>Contate-nos</h1>
       <form
-        target="_blank"
-        action="https://formsubmit.co/guii_arantes@hotmail.com"
-        method="POST"
+        action="https://api.staticforms.xyz/submit" method="POST"
       >
+      <input type="hidden" name="redirectTo" value="http://localhost:4200/">
+        <input type="text" name="honeypot" style="display:none">
+        <input type="hidden" name="accessKey" value="60c62a17-ed6f-4621-8dd0-0aa692d18824">
         <label for="inputNome">Nome</label>
         <input
         required
-          name="nome"
+          name="name"
           type="text"
           class="form-control"
           id="inputNome"
@@ -82,7 +83,7 @@
         <label for="inputTelefone">Telefone</label>
         <input
         required
-          name="telefone"
+          name="phone"
           type="tel"
           class="form-control"
           id="inputTelefone"
@@ -99,8 +100,8 @@
         />
 
         <label for="exampleFormControlTextarea1">Mensagem</label>
-      <textarea required class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descreva seu problema" name="mensagem"></textarea>
-      <button type="submit" class="btn btn-primary" (click)="enviar()">Enviar</button>
+      <textarea required class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Descreva seu problema" name="message"></textarea>
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </form>
     </div>
   </div>

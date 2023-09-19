@@ -4,29 +4,38 @@
       <img src="../assets/images/infotec-logo.png" />
     </div>
     <div class="menu">
-      <ul>
-        <li>Home</li>
-        <li>Serviços</li>
-        <li>Contato</li>
-        <li>Localização</li>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicos">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#localizacao">Localização</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
       </ul>
+
     </div>
     <div class="whatsapp">
       <img src="../assets/images/whatsapp-logo.png" />
-      <a><p>(034) 99184-2013</p></a>
+      <a target="_blank" href="https://wa.me//5534991842013?text=Olá,%20gostaria%20de%20um%20orçamento."><p>(034) 99184-2013</p></a>
     </div>
   </div>
 
-  <div class="body">
+  <div class="body" id="home">
     <div class="home">
       <h3>Assistência Técnica de Smartphones</h3>
       <div class="content">
         <div class="title-info">
           <h1>Seu celular quebrou?</h1>
           <h1>Temos a solução!</h1>
-          <button type="button" class="btn btn-primary">
+          <a target="_blank" href="https://wa.me//5534991842013?text=Olá,%20gostaria%20de%20um%20orçamento."><button type="button" class="btn btn-primary">
             Quero consertar meu celular !
-          </button>
+          </button></a>
         </div>
         <div class="iphone-img">
           <img src="../assets/images/iphone.png" />
@@ -34,7 +43,7 @@
       </div>
     </div>
     <hr />
-    <h1 id="servicos">Nossos Serviços</h1>
+    <h1 id="servicos">NOSSOS SERVIÇOS</h1>
     <div class="services">
       <div class="tela">
         <img src="../assets/images/tela.png" />
@@ -50,8 +59,8 @@
       </div>
     </div>
     <hr />
-    <div class="localizacao">
-      <h1>Nossa Localização</h1>
+    <div class="localizacao" id="localizacao">
+      <h1>NOSSA LOCALIZAÇÃO</h1>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30200.026955846894!2d-48.33982572568353!3d-18.886931699999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a44723360f4961%3A0xef5adec8a04bba4a!2sINFOTEC!5e0!3m2!1sen!2sbr!4v1695133903807!5m2!1sen!2sbr"
         width="600"
@@ -63,8 +72,8 @@
       ></iframe>
     </div>
     <hr />
-    <div class="contato">
-      <h1>Contate-nos</h1>
+    <div class="contato" id="contato">
+      <h1>CONTATE-NOS</h1>
       <form
         action="https://api.staticforms.xyz/submit" method="POST"
       >
@@ -88,6 +97,7 @@
           class="form-control"
           id="inputTelefone"
           placeholder="Digite seu telefone"
+          ui-br-phone-number
         />
         <label for="inputEmail">Email</label>
         <input
